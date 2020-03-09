@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shop App</string>
+    <string name="shop_app">Shop App</string>
+    <string name="name">Name</string>
+    <string name="price">Price €0.60</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="qtd">1</string>
+    <string name="order">Order</string>
+    <string name="thanks_note">Thank you for buying with us!</string>
+    <string name="todo">TODO</string>
+</resources>
