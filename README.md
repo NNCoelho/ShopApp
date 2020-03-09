@@ -1,2 +1,2 @@
 # ShopApp
-A small ordering app.
+A small ordering app. (Android Studio)
