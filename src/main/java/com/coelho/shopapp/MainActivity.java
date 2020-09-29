@@ -1,8 +1,8 @@
 package com.coelho.shopapp;
 
 import android.annotation.SuppressLint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         orderButton();
     }
 
-    private void incrementQtd(){
+    private void incrementQtd() {
 
         Button plusButton = findViewById(R.id.btn_plus);
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(quantity < 10){
+                if (quantity < 10) {
                     quantity += 1;
                 }
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void decrementQtd(){
+    private void decrementQtd() {
 
         Button minusButton = findViewById(R.id.btn_minus);
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(quantity > 1){
+                if (quantity > 1) {
                     quantity -= 1;
                 }
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void orderButton(){
+    private void orderButton() {
 
         Button btn_compra = findViewById(R.id.btn_order);
 
@@ -66,15 +66,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-            double total = quantity * (.60);
+                double total = quantity * (.60);
 
-            TextView tv_thanks = findViewById(R.id.tv_thanks);
-            EditText et_name = findViewById(R.id.txt_name);
+                TextView tv_thanks = findViewById(R.id.tv_thanks);
+                EditText et_name = findViewById(R.id.txt_name);
 
-            @SuppressLint("DefaultLocale") String message = "Your total is €" + String.format("%.2f", total) + "!" + "\n"
-                    + "Thank you for your Purchase, " + et_name.getText().toString() + "!";
+                @SuppressLint("DefaultLocale") String message = "Your total is €" + String.format("%.2f", total) + "!" + "\n"
+                        + "Thank you for your Purchase, " + et_name.getText().toString() + "!";
 
-            tv_thanks.setText(message);
+                tv_thanks.setText(message);
             }
         });
     }
